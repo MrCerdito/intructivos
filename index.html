@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Instructivos – Centro de Ayuda</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+  <!-- HEADER INSTITUCIONAL -->
+  <header class="site-header">
+    <div class="header-main">
+      <div class="header-inner">
+        <div class="brand">
+          <div class="brand-logo">
+            <svg width="42" height="42" viewBox="0 0 42 42" fill="none">
+              <rect width="42" height="42" rx="10" fill="rgba(255,255,255,0.15)"/>
+              <path d="M10 13h22M10 21h22M10 29h14" stroke="#fff" stroke-width="2.8" stroke-linecap="round"/>
+              <circle cx="33" cy="29" r="6" fill="#F5A623"/>
+              <path d="M31 29h4M33 27v4" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="brand-text">
+            <span class="brand-title">INSTRUCTIVOS</span>
+            <span class="brand-sub">Centro de Ayuda Institucional</span>
+          </div>
+        </div>
+        <div id="stats-bar" class="stats-bar"></div>
+      </div>
+    </div>
+    <div class="header-tagline">
+      <div class="header-inner">
+        <p>Selecciona el instructivo que deseas consultar. Todos los contenidos se actualizan automáticamente.</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- TABS -->
+  <nav class="tabs-bar">
+    <div class="tabs-inner">
+      <button class="tab active" data-cat="todos">
+        <span class="tab-icon">📋</span><span>Todos</span>
+      </button>
+      <button class="tab" data-cat="Padres">
+        <span class="tab-icon">👨‍👩‍👧</span><span>Padres</span>
+      </button>
+      <button class="tab" data-cat="Docentes">
+        <span class="tab-icon">🎓</span><span>Docentes</span>
+      </button>
+      <button class="tab" data-cat="Administrativos">
+        <span class="tab-icon">🏫</span><span>Administrativos</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- SEARCH -->
+  <div class="search-wrap" id="searchWrap">
+    <div class="search-box">
+      <span>🔍</span>
+      <input type="text" id="searchInput" placeholder="Buscar instructivo…"/>
+    </div>
+  </div>
+
+  <!-- MAIN -->
+  <main class="main">
+    <div class="container" id="appRoot">
+      <div class="loading">Cargando instructivos…</div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <p>Centro de Ayuda Institucional · Control Academic &amp; Sian 365</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
